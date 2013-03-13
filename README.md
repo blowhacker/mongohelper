@@ -7,3 +7,7 @@ Helper functions for the mongodb shell
 -list all keys in a collection
 -by default, it only checks 10100 documents to get an exhaustive list, if you document varies across the collection, do: db.collection.fields(true)
 
+
+To use, simply copy and paste the contents of mongohelper.js into your mongo shell.
+or run
+ load("/path/to/mongohelper.js");
