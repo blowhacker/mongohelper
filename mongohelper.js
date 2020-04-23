@@ -60,7 +60,7 @@ DB.prototype.grep = function(search, includeNonIndexedFields) {
             }
         }
         for (var field in findFields) {
-            var farr = [];
+            var farr = {};
             farr[field] = search;
             if (this.getCollection(col).findOne(farr)) {
                 print(tojson(search) + " exists in " + this + "." + col + "." + field);
